@@ -1,0 +1,26 @@
+<p>candidate-login works!</p>
+
+
+<div class="row justify-content-center">
+    <div class="col-lg-5 col-md-12 col-xs-12">
+        <div class="login-form login-area">
+            <h3>Login Now</h3>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group input_div">
+                    <label for="username">Username</label>&nbsp;
+                    <i class="lni-user"></i>
+                    <input type="text" formControlName="username" class="form-control">
+                </div>
+
+                <div class="form-group input_div">
+                    <label for="password">Password</label>&nbsp;
+                    <i class="lni-lock"></i>
+                    <input type="password" formControlName="password" class="form-control">
+                </div>
+                <div style="text-align: center;">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
